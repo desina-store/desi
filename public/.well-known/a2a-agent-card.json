@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "A2AAgentCard",
+  "name": "DeSinaHub AI Assistant",
+  "description": "منصة تجارة إلكترونية متكاملة في مصر تعرض أحدث الموبايلات، الأجهزة الكهربائية، الكمبيوتر وملحقاته، الملابس الرياضية، ومنتجات الأوتلت وملابس الموضة.",
+  "version": "1.0.0",
+  "endpoint": "https://www.desinahub.com/api/a2a",
+  "capabilities": {
+    "searchProducts": true,
+    "handleWebhooks": true,
+    "manageReviews": true
+  },
+  "authentication": {
+    "type": "Bearer",
+    "required": false
+  }
+}
