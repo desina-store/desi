@@ -237,7 +237,23 @@ a {
   backface-visibility: hidden;
 }
 
-/* Swiper tuning */
+/* Swiper tuning & Fix image zoom overflow */
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-swiper .swiper-slide {
+  overflow: hidden;
+  height: auto;
+}
+
+.hero-swiper .swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-swiper .swiper-pagination {
   bottom: 0.9rem !important;
   text-align: start;
@@ -277,10 +293,6 @@ a {
   .hero-swiper .swiper-button-prev {
     display: none;
   }
-}
-
-.swiper-slide {
-  height: auto;
 }
 
 details > summary {
