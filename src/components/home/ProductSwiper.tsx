@@ -7,7 +7,7 @@ import { A11y, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { ProductCard } from '@/components/catalogss/ProductCard';
+import { ProductCard } from '@/components/catalog/ProductCard';
 import { useLanguage } from '@/components/providers/LanguageProvider';
 import type { Product } from '@/lib/products';
 
