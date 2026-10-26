@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useLanguage } from '@/componentsaa/providers/LanguageProvider';
+import { useLanguage } from '@/components/providers/LanguageProvider';
 import { STORE_SECTIONS } from '@/lib/site';
 
 export function CategoryRail() {
