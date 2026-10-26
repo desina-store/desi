@@ -20,7 +20,7 @@ const cairo = localFont({
   src: './fonts/Cairo-VariableFont_slnt,wght.woff2',
   variable: '--font-cairo',
   display: 'swap',
-  weight: '200 700',
+  weight: '200 1000',
   style: 'normal',
   fallback: ['Cairo', 'system-ui', 'sans-serif'],
 });
