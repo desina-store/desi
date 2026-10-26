@@ -45,7 +45,7 @@ export function HeroSwiper() {
 
       <div className="page-shell relative py-9 md:py-14">
         <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_1.18fr] lg:gap-12">
-          <div className="min-w-0 ds-rise">
+          <div className="ds-rise">
             <span className="inline-flex items-center gap-2 rounded-full border border-olive/20 bg-white/65 px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.18em] text-olive backdrop-blur">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-olive opacity-60" />
@@ -86,6 +86,7 @@ export function HeroSwiper() {
               </div>
             </dl>
           </div>
+
           <div className="ds-fade-in relative">
             <div className="absolute -top-3 end-4 z-20 hidden items-center gap-2 rounded-full bg-ink px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.14em] text-canary shadow-float sm:inline-flex">
               <Sparkles className="h-3.5 w-3.5" />
