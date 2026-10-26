@@ -75,7 +75,7 @@ export default async function HomePage() {
                 </h2>
                 <p className="mt-1 text-xs text-muted">{tr('home.searchSub')}</p>
               </div>
-              <LiveSearch mode="home" />
+              <LiveSearch mode="home" aria-label="بحث في المتجر" />
             </div>
           </div>
         </section>
