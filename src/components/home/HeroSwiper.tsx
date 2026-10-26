@@ -45,7 +45,7 @@ export function HeroSwiper() {
 
       <div className="page-shell relative py-9 md:py-14">
         <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_1.18fr] lg:gap-12">
-          <div className="ds-rise">
+          <div className="min-w-0 ds-rise">
             <span className="inline-flex items-center gap-2 rounded-full border border-olive/20 bg-white/65 px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.18em] text-olive backdrop-blur">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-olive opacity-60" />
@@ -86,7 +86,6 @@ export function HeroSwiper() {
               </div>
             </dl>
           </div>
-
           <div className="ds-fade-in relative">
             <div className="absolute -top-3 end-4 z-20 hidden items-center gap-2 rounded-full bg-ink px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.14em] text-canary shadow-float sm:inline-flex">
               <Sparkles className="h-3.5 w-3.5" />
@@ -95,22 +94,19 @@ export function HeroSwiper() {
 
             <div className="rounded-[2rem] border border-white/70 bg-white/55 p-2 shadow-float backdrop-blur-sm">
               <Swiper
+                key={lang}
                 modules={[Autoplay, Navigation, Pagination]}
                 slidesPerView={1}
                 spaceBetween={0}
-                loop={true}
+                loop
                 speed={650}
                 autoplay={{ delay: 4600, disableOnInteraction: false, pauseOnMouseEnter: true }}
-                navigation={true}
+                navigation
                 pagination={{ clickable: true }}
-                observer={true}
-                observeParents={true}
-                dir={isRtl ? 'rtl' : 'ltr'}
                 onSlideChange={(swiper: SwiperType) => setActive(swiper.realIndex)}
                 className="hero-swiper overflow-hidden rounded-[1.6rem]"
                 aria-label="DeSinaHub campaigns"
               >
-                {HERO_SLIDES.dir = isRtl ? 'rtl' : 'ltr'}
                 {HERO_SLIDES.map((slide) => {
                   const copy = heroSlideText(slide, lang);
                   return (
@@ -167,7 +163,7 @@ export function HeroSwiper() {
 
         <ul className="mt-9 grid gap-2.5 rounded-[1.5rem] border border-ink/[0.06] bg-white/45 p-3 backdrop-blur-sm sm:grid-cols-3 md:mt-12">
           {TRUST.map((item) => {
-            The Icon = item.icon;
+            const Icon = item.icon;
             return (
               <li key={item.en} className="flex items-center gap-2.5 rounded-xl px-3 py-2">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-canary/60 text-olive-dark">
