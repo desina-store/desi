@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -36,7 +36,12 @@ const TRUST = [
 export function HeroSwiper() {
   const { lang, t } = useLanguage();
   const [active, setActive] = useState(0);
+  const [mounted, setMounted] = useState(false);
   const isRtl = lang === 'ar';
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section className="relative overflow-hidden">
@@ -45,7 +50,7 @@ export function HeroSwiper() {
 
       <div className="page-shell relative py-9 md:py-14">
         <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_1.18fr] lg:gap-12">
-          <div className="ds-rise">
+          <div className="min-w-0 ds-rise">
             <span className="inline-flex items-center gap-2 rounded-full border border-olive/20 bg-white/65 px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.18em] text-olive backdrop-blur">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-olive opacity-60" />
@@ -87,64 +92,70 @@ export function HeroSwiper() {
             </dl>
           </div>
 
-          <div className="ds-fade-in relative">
+          <div className="min-w-0 ds-fade-in relative">
             <div className="absolute -top-3 end-4 z-20 hidden items-center gap-2 rounded-full bg-ink px-3.5 py-1.5 text-[0.625rem] font-extrabold uppercase tracking-[0.14em] text-canary shadow-float sm:inline-flex">
               <Sparkles className="h-3.5 w-3.5" />
               {t('hero.limited')}
             </div>
 
-            <div className="rounded-[2rem] border border-white/70 bg-white/55 p-2 shadow-float backdrop-blur-sm">
-              <Swiper
-                key={lang}
-                modules={[Autoplay, Navigation, Pagination]}
-                slidesPerView={1}
-                spaceBetween={0}
-                loop
-                speed={650}
-                autoplay={{ delay: 4600, disableOnInteraction: false, pauseOnMouseEnter: true }}
-                navigation
-                pagination={{ clickable: true }}
-                onSlideChange={(swiper: SwiperType) => setActive(swiper.realIndex)}
-                className="hero-swiper overflow-hidden rounded-[1.6rem]"
-                aria-label="DeSinaHub campaigns"
-              >
-                {HERO_SLIDES.map((slide) => {
-                  const copy = heroSlideText(slide, lang);
-                  return (
-                    <SwiperSlide key={slide.id}>
-                      <div className="relative aspect-[4/3] w-full sm:aspect-[16/11] lg:aspect-[16/12]">
-                        <Image
-                          src={slide.image}
-                          alt={copy.title}
-                          fill
-                          priority={slide.id === 1}
-                          sizes="(max-width: 1024px) 100vw, 640px"
-                          className="object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />
-                        <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-5 pb-10 sm:p-6 sm:pb-12">
-                          <span className="w-fit rounded-full bg-canary px-2.5 py-1 text-[0.5625rem] font-extrabold uppercase tracking-[0.14em] text-ink">
-                            {copy.kicker}
-                          </span>
-                          <h2 className="max-w-[22ch] text-balance text-xl font-extrabold leading-tight text-white sm:text-2xl lg:text-[1.65rem]">
-                            {copy.title}
-                          </h2>
-                          <p className="hidden max-w-[46ch] text-[0.8125rem] leading-relaxed text-white/75 sm:block">
-                            {copy.body}
-                          </p>
-                          <Link
-                            href={slide.href}
-                            className="inline-flex w-fit items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-[0.6875rem] font-extrabold text-ink transition-colors hover:bg-canary"
-                          >
-                            {t('sections.view')}
-                            <ArrowRight className="h-3.5 w-3.5 rtl-flip" />
-                          </Link>
+            <div className="rounded-[2rem] border border-white/70 bg-white/55 p-2 shadow-float backdrop-blur-sm min-h-[360px] sm:min-h-[420px]">
+              {!mounted ? (
+                <div className="w-full h-full min-h-[350px] sm:min-h-[400px] rounded-[1.6rem] bg-ink/5" />
+              ) : (
+                <Swiper
+                  modules={[Autoplay, Navigation, Pagination]}
+                  slidesPerView={1}
+                  spaceBetween={0}
+                  loop={true}
+                  speed={650}
+                  autoplay={{ delay: 4600, disableOnInteraction: false, pauseOnMouseEnter: true }}
+                  navigation={true}
+                  pagination={{ clickable: true }}
+                  observer={true}
+                  observeParents={true}
+                  dir={isRtl ? 'rtl' : 'ltr'}
+                  onSlideChange={(swiper: SwiperType) => setActive(swiper.realIndex)}
+                  className="hero-swiper overflow-hidden rounded-[1.6rem]"
+                  aria-label="DeSinaHub campaigns"
+                >
+                  {HERO_SLIDES.map((slide) => {
+                    const copy = heroSlideText(slide, lang);
+                    return (
+                      <SwiperSlide key={slide.id}>
+                        <div className="relative aspect-[4/3] w-full sm:aspect-[16/11] lg:aspect-[16/12] bg-ink/5">
+                          <Image
+                            src={slide.image}
+                            alt={copy.title}
+                            fill
+                            priority={slide.id === 1}
+                            sizes="(max-width: 1024px) 100vw, 640px"
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />
+                          <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-5 pb-10 sm:p-6 sm:pb-12">
+                            <span className="w-fit rounded-full bg-canary px-2.5 py-1 text-[0.5625rem] font-extrabold uppercase tracking-[0.14em] text-ink">
+                              {copy.kicker}
+                            </span>
+                            <h2 className="max-w-[22ch] text-balance text-xl font-extrabold leading-tight text-white sm:text-2xl lg:text-[1.65rem]">
+                              {copy.title}
+                            </h2>
+                            <p className="hidden max-w-[46ch] text-[0.8125rem] leading-relaxed text-white/75 sm:block">
+                              {copy.body}
+                            </p>
+                            <Link
+                              href={slide.href}
+                              className="inline-flex w-fit items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-[0.6875rem] font-extrabold text-ink transition-colors hover:bg-canary"
+                            >
+                              {t('sections.view')}
+                              <ArrowRight className="h-3.5 w-3.5 rtl-flip" />
+                            </Link>
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              )}
             </div>
 
             <div className="mt-3 flex items-center justify-between px-2">
