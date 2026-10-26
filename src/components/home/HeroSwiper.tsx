@@ -95,19 +95,22 @@ export function HeroSwiper() {
 
             <div className="rounded-[2rem] border border-white/70 bg-white/55 p-2 shadow-float backdrop-blur-sm">
               <Swiper
-                key={lang}
                 modules={[Autoplay, Navigation, Pagination]}
                 slidesPerView={1}
                 spaceBetween={0}
-                loop
+                loop={true}
                 speed={650}
                 autoplay={{ delay: 4600, disableOnInteraction: false, pauseOnMouseEnter: true }}
-                navigation
+                navigation={true}
                 pagination={{ clickable: true }}
+                observer={true}
+                observeParents={true}
+                dir={isRtl ? 'rtl' : 'ltr'}
                 onSlideChange={(swiper: SwiperType) => setActive(swiper.realIndex)}
                 className="hero-swiper overflow-hidden rounded-[1.6rem]"
                 aria-label="DeSinaHub campaigns"
               >
+                {HERO_SLIDES.dir = isRtl ? 'rtl' : 'ltr'}
                 {HERO_SLIDES.map((slide) => {
                   const copy = heroSlideText(slide, lang);
                   return (
@@ -164,7 +167,7 @@ export function HeroSwiper() {
 
         <ul className="mt-9 grid gap-2.5 rounded-[1.5rem] border border-ink/[0.06] bg-white/45 p-3 backdrop-blur-sm sm:grid-cols-3 md:mt-12">
           {TRUST.map((item) => {
-            const Icon = item.icon;
+            The Icon = item.icon;
             return (
               <li key={item.en} className="flex items-center gap-2.5 rounded-xl px-3 py-2">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-canary/60 text-olive-dark">
