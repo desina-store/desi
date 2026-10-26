@@ -75,6 +75,7 @@ export function LiveSearch({ mode = 'home', initialQuery = '' }: LiveSearchProps
           ) : null}
           <button
             type="submit"
+            aria-label={lang === 'ar' ? 'بحث' : 'Search'}
             className="flex h-9 items-center gap-1.5 rounded-full bg-canary px-3.5 text-[0.6875rem] font-extrabold text-ink transition-colors hover:bg-canary-deep"
           >
             <Search className="h-3.5 w-3.5" />
