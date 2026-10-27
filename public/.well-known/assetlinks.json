@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.desinahub.www.twa",
-        "sha256_cert_fingerprints": ["D3:86:59:1F:1C:C9:67:C0:0B:E1:97:54:F1:3D:1D:36:B8:9A:2E:19:89:4D:DB:78:EE:F0:42:9C:9D:0A:EC:FF"]
-      }
-    }]
