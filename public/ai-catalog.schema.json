@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.desinahub.com/ai-catalog.schema.json",
+  "title": "DeSinaHub AI Commerce and Services Manifest Schema",
+  "type": "object",
+  "required": [
+    "catalogType",
+    "catalogVersion",
+    "schema",
+    "identity",
+    "provider",
+    "officialProfiles",
+    "platform",
+    "catalog",
+    "categories",
+    "resources",
+    "productModel",
+    "serviceModel",
+    "inventory",
+    "pricing",
+    "offers",
+    "shopping",
+    "orders",
+    "payments",
+    "shipping",
+    "locations",
+    "bookings",
+    "reviews",
+    "customerAccounts",
+    "agentCapabilities",
+    "agentActions",
+    "api",
+    "webMCP",
+    "discovery",
+    "dataSources",
+    "dataQuality",
+    "freshness",
+    "security",
+    "privacy",
+    "localization",
+    "policies",
+    "analytics",
+    "versioning",
+    "updatePolicy",
+    "machineReadable",
+    "contentTypes",
+    "urls",
+    "futureExtensions",
+    "metadata"
+  ],
+  "properties": {
+    "catalogType": {
+      "type": "string",
+      "const": "AI_COMMERCE_AND_SERVICES_MANIFEST"
+    },
+    "catalogVersion": {
+      "type": "string",
+      "const": "3.1.0"
+    },
+    "schema": {
+      "type": "object",
+      "required": ["format", "draft", "schemaUrl"],
+      "properties": {
+        "format": { "type": "string" },
+        "draft": { "type": "string" },
+        "schemaUrl": { "type": "string", "format": "uri" }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "required": ["name", "entityType", "platformType", "url", "country", "currency", "primaryLanguage"],
+      "properties": {
+        "name": { "type": "string" },
+        "alternateNames": { "type": "array", "items": { "type": "string" } },
+        "entityType": { "type": "string" },
+        "platformType": { "type": "string" },
+        "description": {
+          "type": "object",
+          "required": ["ar", "en"],
+          "properties": {
+            "ar": { "type": "string" },
+            "en": { "type": "string" }
+          }
+        },
+        "url": { "type": "string", "format": "uri" },
+        "canonicalUrl": { "type": "string", "format": "uri" },
+        "logo": { "type": "string", "format": "uri" },
+        "country": { "type": "string" },
+        "region": { "type": "string" },
+        "market": { "type": "string" },
+        "currency": { "type": "string" },
+        "primaryLanguage": { "type": "string" },
+        "supportedLanguages": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "provider": {
+      "type": "object",
+      "required": ["name", "url", "support"],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "support": {
+          "type": "object",
+          "required": ["email"],
+          "properties": { "email": { "type": "string", "format": "email" } }
+        },
+        "sales": {
+          "type": "object",
+          "properties": { "email": { "type": "string", "format": "email" } }
+        }
+      }
+    },
+    "officialProfiles": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "format": "uri" }
+    },
+    "platform": {
+      "type": "object",
+      "required": ["marketplaceType", "country", "currency", "features"],
+      "properties": {
+        "marketplaceType": { "type": "string" },
+        "country": { "type": "string" },
+        "currency": { "type": "string" },
+        "features": { "type": "object" }
+      }
+    },
+    "catalog": {
+      "type": "object",
+      "required": ["id", "name", "description", "baseUrl", "entities"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "object" },
+        "description": { "type": "object" },
+        "baseUrl": { "type": "string", "format": "uri" },
+        "entities": { "type": "object" }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "name": { "type": "object" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "type", "access", "readOnly"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "url": { "type": ["string", "null"], "format": "uri" },
+          "method": { "type": "string" },
+          "contentType": { "type": "string" },
+          "access": { "type": "string" },
+          "readOnly": { "type": "boolean" },
+          "requiresUserInteraction": { "type": "boolean" },
+          "requiresConfirmation": { "type": "boolean" },
+          "parameters": { "type": "object" }
+        }
+      }
+    },
+    "productModel": { "type": "object" },
+    "serviceModel": { "type": "object" },
+    "brandModel": { "type": "object" },
+    "vendorModel": { "type": "object" },
+    "offerModel": { "type": "object" },
+    "entityRelationships": { "type": "object" },
+    "inventory": { "type": "object" },
+    "pricing": { "type": "object" },
+    "offers": { "type": "object" },
+    "shopping": { "type": "object" },
+    "orders": { "type": "object" },
+    "payments": { "type": "object" },
+    "shipping": { "type": "object" },
+    "locations": { "type": "object" },
+    "bookings": { "type": "object" },
+    "reviews": { "type": "object" },
+    "customerAccounts": { "type": "object" },
+    "agentCapabilities": { "type": "object" },
+    "agentActions": { "type": "object" },
+    "api": { "type": "object" },
+    "webMCP": { "type": "object" },
+    "discovery": { "type": "object" },
+    "dataSources": { "type": "object" },
+    "dataQuality": { "type": "object" },
+    "freshness": { "type": "object" },
+    "security": { "type": "object" },
+    "privacy": { "type": "object" },
+    "localization": { "type": "object" },
+    "policies": { "type": "object" },
+    "analytics": { "type": "object" },
+    "versioning": { "type": "object" },
+    "updatePolicy": { "type": "object" },
+    "machineReadable": { "type": "object" },
+    "contentTypes": { "type": "object" },
+    "urls": {
+      "type": "object",
+      "required": ["home", "products", "services", "outlet", "search", "cart", "checkout", "aiCatalog", "aiCatalogSchema"],
+      "additionalProperties": { "type": "string", "format": "uri" }
+    },
+    "futureExtensions": { "type": "object" },
+    "metadata": {
+      "type": "object",
+      "required": ["status", "environment", "owner", "region", "language", "lastUpdated"],
+      "properties": {
+        "status": { "type": "string" },
+        "environment": { "type": "string" },
+        "owner": { "type": "string" },
+        "region": { "type": "string" },
+        "language": { "type": "string" },
+        "lastUpdated": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
