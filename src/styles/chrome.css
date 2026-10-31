@@ -780,14 +780,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3f4f6;
+  background: #F0E5D6;
   color: #67676e;
   transition: 0.9s;
 }
 
 .social-link svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   fill: currentColor;
 }
 
