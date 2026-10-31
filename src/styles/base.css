@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100% !important;
+  -webkit-text-size-adjust: 100% !importantss;
   text-size-adjust: 100% !important;
   scroll-padding-top: calc(var(--header-h) + 24px);
 }
