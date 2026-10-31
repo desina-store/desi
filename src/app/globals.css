@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/base.css";
+@import "../styles/chrome.css";
+@import "../styles/home.css";
+@import "../styles/catalog.css";
+@import "../styles/commerce.css";
+@import "../styles/pages.css";
+
+.section-heading--center {
+  justify-content: center;
+  text-align: center;
+}
+
+.section-heading--center .section-heading__copy {
+  align-items: center;
+}
+
+.section-heading--center .section-sub {
+  margin-inline: auto;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.55);
+  transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out);
+}
+
+.text-link:hover {
+  background: var(--dark);
+  color: #fff;
+}
+
+.text-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+.social-item--fb:hover .social-label {
+  color: #1877f2;
+}
+
+.social-item--yt:hover .social-label {
+  color: #ff0000;
+}
+
+.social-item--tt:hover .social-label {
+  color: #fe2c55;
+}
+
+.social-item--ig:hover .social-label {
+  color: #d6249f;
+}
+
+.social-item--wa:hover .social-label {
+  color: #25d366;
+}
+
+.menu-socials .social-label {
+  display: none;
+}
+
+.install-hint {
+  text-decoration: none;
+}
