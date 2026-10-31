@@ -1,4 +1,4 @@
-.product-grid {
+.product-gridss {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(12px, 1.8vw, 22px);
