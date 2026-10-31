@@ -151,15 +151,30 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
-        {/* Two preloads were removed because they cost bytes on every route:
-            next/font already preloads Cairo from its hashed copy, and <Image priority>
-            already preloads the hero on the homepage that actually shows it. */}
+        <link
+  rel="preload"
+  as="image"
+  href="/_next/image?url=%2Fproducts%2Fhero.jpg&w=3840&q=75"
+  imageSizes="(max-width: 900px) 100vw, 52vw"
+  imageSrcSet="/_next/image?url=%2Fproducts%2Fhero.jpg&w=384&q=75 384w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=640&q=75 640w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=750&q=75 750w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=828&q=75 828w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fproducts%2Fhero.jpg&w=3840&q=75 3840w"
+  fetchPriority="high"
+/>
+           
+    <link 
+  rel="preload" 
+  href="/fonts/Cairo-VariableFont_slnt,wght.woff2" 
+  as="font" 
+  type="font/woff2" 
+  crossOrigin="anonymous" 
+/>
+    
 
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://vercel.live" />
-        <link rel="dns-prefetch" href="https://connect.facebook.net" />
-        <link rel="dns-prefetch" href="https://analytics.tiktok.com" />
-      </head>
+             {/* 2. الاتصالات الخفيفة للسوشيال ميديا (DNS Prefetch) */}
+     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+     <link rel="dns-prefetch" href="https://vercel.live" />
+     <link rel="dns-prefetch" href="https://connect.facebook.net" />
+     <link rel="dns-prefetch" href="https://analytics.tiktok.com" />
+</head>
       <body>
         <I18nProvider initialLang={lang}>
           <CartProvider>
