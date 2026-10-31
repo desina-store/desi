@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="Fawry">
-  <rect width="120" height="40" rx="6" fill="#ffc20e"/>
-  <text x="15" y="27" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="900" letter-spacing="-0.6" fill="#1b1b1b">fawry</text>
-  <path d="M97 10h12v7H97z" fill="#1b1b1b"/>
-  <path d="M96 22h13v8H96z" fill="#1b1b1b"/>
-</svg>
