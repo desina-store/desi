@@ -1,0 +1,608 @@
+[
+  {
+    "code": 2,
+    "allCodes": [
+      2,
+      7,
+      28,
+      36,
+      46,
+      56,
+      71,
+      80,
+      94,
+      100,
+      111,
+      117
+    ],
+    "name": {
+      "en": "iPhone 16 Pro Max 256GB",
+      "ar": "آيفون 16 برو ماكس 256 جيجا"
+    },
+    "category": "Mobiles",
+    "categories": [
+      "Mobiles"
+    ],
+    "img": "/products/iphone.webp",
+    "type": "hardware",
+    "price": 63000,
+    "info": {
+      "brand": {
+        "en": "Apple",
+        "ar": "أبل"
+      },
+      "spec": {
+        "en": "256GB / Titanium Gray",
+        "ar": "مساحة 256 جيجا / تيتانيوم"
+      },
+      "warranty": {
+        "en": "1 Year Local & International",
+        "ar": "ضمان سنة محلي ودولي"
+      }
+    },
+    "description": {
+      "en": "iPhone 16 Pro Max 256GB by Apple. 256GB / Titanium Gray. 1 Year Local & Int.. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "آيفون 16 برو ماكس 256 جيجا من أبل. مساحة 256 جيجا / تيتانيوم. ضمان سنة دولي ومحلي. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 5,
+    "allCodes": [
+      5,
+      14,
+      27,
+      35,
+      70,
+      79,
+      93,
+      110
+    ],
+    "name": {
+      "en": "Samsung Crystal UHD 55 Inch",
+      "ar": "شاشة سامسونج كريستال 55 بوصة"
+    },
+    "category": "Appliances",
+    "categories": [
+      "Appliances"
+    ],
+    "img": "/products/samsung_tv.webp",
+    "type": "hardware",
+    "price": 1000,
+    "info": {
+      "brand": {
+        "en": "Samsung",
+        "ar": "سامسونج"
+      },
+      "spec": {
+        "en": "55\" 4K Smart Tizen OS",
+        "ar": "55 بوصة 4K سمارت"
+      },
+      "warranty": {
+        "en": "2 Years Extra",
+        "ar": "ضمان سنتين ضد عيوب الصناعة"
+      }
+    },
+    "description": {
+      "en": "Samsung Crystal UHD 55 Inch by Samsung. 55\" 4K Smart Tizen OS. 2 Years Extra. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "شاشة سامسونج كريستال 55 بوصة من سامسونج. 55 بوصة 4K سمارت. ضمان سنتين ضد عيوب الصناعة. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 8,
+    "allCodes": [
+      8,
+      15,
+      29,
+      37,
+      47,
+      57,
+      72,
+      81,
+      95,
+      101,
+      102,
+      112,
+      118,
+      119
+    ],
+    "name": {
+      "en": "Apple AirPods Pro Gen 2",
+      "ar": "سماعة أبل أيربودز برو الجيل الثاني"
+    },
+    "category": "Mobiles",
+    "categories": [
+      "Mobiles"
+    ],
+    "img": "/products/airpods.webp",
+    "type": "hardware",
+    "price": 1000,
+    "info": {
+      "brand": {
+        "en": "Apple",
+        "ar": "أبل"
+      },
+      "spec": {
+        "en": "MagSafe Case (USB-C)",
+        "ar": "علبة ماج سيف بمنفذ تايب سي"
+      },
+      "warranty": {
+        "en": "1 Year Active Warranty",
+        "ar": "ضمان سنة مفعل"
+      }
+    },
+    "description": {
+      "en": "Apple AirPods Pro Gen 2 by Apple. MagSafe Case (USB-C). 1 Year Active Warranty. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "سماعة أبل أيربودز برو الجيل الثاني من أبل. علبة ماج سيف بمنفذ تايب سي. ضمان سنة مفعل. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 9,
+    "allCodes": [
+      9,
+      16,
+      30,
+      38,
+      48,
+      58,
+      73,
+      82,
+      96,
+      113
+    ],
+    "name": {
+      "en": "Anker Soundcore Liberty 4",
+      "ar": "سماعة أنكر ساوندكور ليبرتي 4"
+    },
+    "category": "Mobiles",
+    "categories": [
+      "Mobiles"
+    ],
+    "img": "/products/anker.webp",
+    "type": "hardware",
+    "price": 4000,
+    "info": {
+      "brand": {
+        "en": "Anker",
+        "ar": "أنكر"
+      },
+      "spec": {
+        "en": "Hi-Res Audio / Spatial Sound",
+        "ar": "صوت نقي عالي الدقة / صوت محيطي"
+      },
+      "warranty": {
+        "en": "18 Months Local Agent",
+        "ar": "ضمان 18 شهر من الوكيل المحلي"
+      }
+    },
+    "description": {
+      "en": "Anker Soundcore Liberty 4 by Anker. Hi-Res Audio / Spatial Sound. 18 Months Local Agent. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "سماعة أنكر ساوندكور ليبرتي 4 من أنكر. صوت نقي عالي الدقة / صوت محيطي. ضمان 18 شهر من الوكيل المحلي. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 10,
+    "allCodes": [
+      1,
+      10,
+      23,
+      31,
+      66,
+      74,
+      89,
+      97,
+      106,
+      114,
+      120
+    ],
+    "name": {
+      "en": "DeSina Urban Jacket [Outlet]",
+      "ar": "جاكيت ديسينا الكاجوال [تصفيات]"
+    },
+    "category": "Fashion",
+    "categories": [
+      "Fashion",
+      "Outlet"
+    ],
+    "img": "/products/p4.webp",
+    "type": "outlet",
+    "price": 1000,
+    "oldPrice": 1500,
+    "info": {
+      "brand": {
+        "en": "DeSina",
+        "ar": "دسينا"
+      },
+      "spec": {
+        "en": "Premium Cotton Blend",
+        "ar": "مزيج قطن فاخر ممتازة"
+      },
+      "warranty": {
+        "en": "Save 500 EGP",
+        "ar": "وفرت 500 ج.م بالمللي"
+      }
+    },
+    "description": {
+      "en": "DeSina Urban Jacket [Outlet] by DeSina. Premium Cotton Blend. Save 500 EGP. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "جاكيت ديسينا الكاجوال [تصفيات] من دسينا. مزيج قطن فاخر ممتازة. وفرت 500 ج.م بالمللي. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 11,
+    "allCodes": [
+      6,
+      11,
+      24,
+      32,
+      67,
+      75,
+      90,
+      98,
+      107,
+      115
+    ],
+    "name": {
+      "en": "LG Smart TV 50 Inch [Outlet]",
+      "ar": "شاشة إل جي 50 بوصة [أوت ليت]"
+    },
+    "category": "Appliances",
+    "categories": [
+      "Appliances",
+      "Outlet"
+    ],
+    "img": "/products/lg_outlet.webp",
+    "type": "outlet",
+    "price": 1000,
+    "oldPrice": 1400,
+    "info": {
+      "brand": {
+        "en": "LG",
+        "ar": "إل جي"
+      },
+      "spec": {
+        "en": "50\" 4K Smart ThinQ",
+        "ar": "50 بوصة 4K سمارت"
+      },
+      "warranty": {
+        "en": "Save 400 EGP",
+        "ar": "وفرت 400 ج.م بالمللي"
+      }
+    },
+    "description": {
+      "en": "LG Smart TV 50 Inch [Outlet] by LG. 50\" 4K Smart ThinQ. Save 400 EGP. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "شاشة إل جي 50 بوصة [أوت ليت] من إل جي. 50 بوصة 4K سمارت. وفرت 400 ج.م بالمللي. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 12,
+    "allCodes": [
+      3,
+      12,
+      25,
+      33,
+      68,
+      76,
+      91,
+      99,
+      108,
+      116
+    ],
+    "name": {
+      "en": "Pro Compression Gym T-Shirt",
+      "ar": "تيشيرت ضغط رياضي للچيم"
+    },
+    "category": "Sports",
+    "categories": [
+      "Sports"
+    ],
+    "img": "/products/gym.t-shirt.webp",
+    "type": "sports",
+    "price": 1000,
+    "info": {
+      "fabric": {
+        "en": "Dry-Fit Spandex / Polyester",
+        "ar": "دراي فيت مطاط / بوليستر"
+      },
+      "sizes": {
+        "en": "M, L, XL, XXL",
+        "ar": "M, L, XL, XXL"
+      },
+      "itemType": {
+        "en": "Athletic Compression",
+        "ar": "ملابس ضغط رياضية"
+      }
+    },
+    "description": {
+      "en": "Pro Compression Gym T-Shirt by DeSina. Sports. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "تيشيرت ضغط رياضي للچيم من ديسينا. Sports. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 13,
+    "allCodes": [
+      4,
+      13,
+      26,
+      34,
+      69,
+      78,
+      92,
+      109
+    ],
+    "name": {
+      "en": "Performance Athletic Shorts",
+      "ar": "شورت رياضي عالي الأداء"
+    },
+    "category": "Sports",
+    "categories": [
+      "Sports"
+    ],
+    "img": "/products/sports_shorts.webp",
+    "type": "sports",
+    "price": 1000,
+    "info": {
+      "fabric": {
+        "en": "Ultra-Lightweight Breathable Mesh",
+        "ar": "نسيج شبكي خفيف مسامي"
+      },
+      "sizes": {
+        "en": "S, M, L, XL",
+        "ar": "S, M, L, XL"
+      },
+      "itemType": {
+        "en": "Training / Running",
+        "ar": "تدريب / جري"
+      }
+    },
+    "description": {
+      "en": "Performance Athletic Shorts by DeSina. Sports. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "شورت رياضي عالي الأداء من ديسينا. Sports. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 17,
+    "allCodes": [
+      17,
+      39,
+      49,
+      59,
+      83
+    ],
+    "name": {
+      "en": "Windows 11 Pro Genuine Key",
+      "ar": "مفتاح ويندوز 11 برو الأصلي"
+    },
+    "category": "Computers",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/windows11.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Retail OEM",
+        "ar": "نسخة ريتيل أصلية"
+      },
+      "duration": {
+        "en": "Lifetime",
+        "ar": "مدى الحياة"
+      },
+      "dev": {
+        "en": "1 PC",
+        "ar": "جهاز كمبيوتر واحد"
+      }
+    },
+    "description": {
+      "en": "Windows 11 Pro Genuine Key by DeSina. Computers. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "مفتاح ويندوز 11 برو الأصلي من ديسينا. Computers. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 18,
+    "allCodes": [
+      18,
+      40,
+      50,
+      60,
+      84
+    ],
+    "name": {
+      "en": "Office 365 Pro Plus Account",
+      "ar": "حساب أوفيس 365 برو بلس"
+    },
+    "category": "Computers",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/office365.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Business Account",
+        "ar": "حساب مؤسسي رسمي"
+      },
+      "duration": {
+        "en": "1 Year",
+        "ar": "سنة كاملة"
+      },
+      "dev": {
+        "en": "5 Devices (PC/Mac/Mobile)",
+        "ar": "5 أجهزة (كمبيوتر/ماك/موبايل)"
+      }
+    },
+    "description": {
+      "en": "Office 365 Pro Plus Account by DeSina. Computers. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "حساب أوفيس 365 برو بلس من ديسينا. Computers. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 19,
+    "allCodes": [
+      19,
+      41,
+      51,
+      61,
+      85
+    ],
+    "name": {
+      "en": "Kaspersky Total Security",
+      "ar": "كاسبرسكي توتال سكيورتي حماية"
+    },
+    "category": "Computers",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/kaspersky.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Global Activation Code",
+        "ar": "كود تفعيل عالمي رسمي"
+      },
+      "duration": {
+        "en": "1 Year",
+        "ar": "سنة كاملة"
+      },
+      "dev": {
+        "en": "1 PC",
+        "ar": "جهاز كمبيوتر واحد"
+      }
+    },
+    "description": {
+      "en": "Kaspersky Total Security by DeSina. Computers. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "كاسبرسكي توتال سكيورتي حماية من ديسينا. Computers. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 20,
+    "allCodes": [
+      20,
+      42,
+      52,
+      62,
+      86,
+      103
+    ],
+    "name": {
+      "en": "Gemini Advanced Premium Pack",
+      "ar": "باقة جيمني المتقدمة بريميوم"
+    },
+    "category": "Computers",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/gemini.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Premium Subscription",
+        "ar": "اشتراك بريميوم خاص"
+      },
+      "duration": {
+        "en": "1 Month",
+        "ar": "شهر واحد"
+      },
+      "dev": {
+        "en": "All Personal Devices",
+        "ar": "جميع أجهزتك الشخصية"
+      }
+    },
+    "description": {
+      "en": "Gemini Advanced Premium Pack by DeSina. Computers. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "باقة جيمني المتقدمة بريميوم من ديسينا. Computers. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 21,
+    "allCodes": [
+      21,
+      22,
+      43,
+      44,
+      45,
+      53,
+      54,
+      55,
+      63,
+      64,
+      65,
+      87,
+      88,
+      104,
+      105
+    ],
+    "name": {
+      "en": "ChatGPT Plus Shared Plan",
+      "ar": "اشتراك شات جي بي تي بلس"
+    },
+    "category": "Computers",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/chatgpt.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Shared Premium Plan",
+        "ar": "خطة بريميوم مشتركة"
+      },
+      "duration": {
+        "en": "1 Month",
+        "ar": "شهر واحد"
+      },
+      "dev": {
+        "en": "1 Device",
+        "ar": "جهاز واحد"
+      }
+    },
+    "description": {
+      "en": "ChatGPT Plus Shared Plan by DeSina. Computers. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "اشتراك شات جي بي تي بلس من ديسينا. Computers. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  },
+  {
+    "code": 121,
+    "allCodes": [
+      121
+    ],
+    "name": {
+      "en": "Bitdefender Total Security",
+      "ar": "بت ديفندر توتال سكيورتي الأصلي"
+    },
+    "category": "OS",
+    "categories": [
+      "Computers",
+      "OS"
+    ],
+    "img": "/products/bitdefender.webp",
+    "type": "digital",
+    "price": 1000,
+    "info": {
+      "type": {
+        "en": "Subscription Serial Key",
+        "ar": "سيريال اشتراك رسمي"
+      },
+      "duration": {
+        "en": "1 Year",
+        "ar": "سنة كاملة"
+      },
+      "dev": {
+        "en": "5 Devices",
+        "ar": "5 أجهزة لحماية العائلة"
+      }
+    },
+    "description": {
+      "en": "Bitdefender Total Security by DeSina. OS. Shop authentic products at DeSinaHub with secure checkout, fast nationwide delivery across Egypt, and dedicated customer support.",
+      "ar": "بت ديفندر توتال سكيورتي الأصلي من ديسينا. OS. تسوّق منتجات أصلية من ديسينا هب مع دفع آمن، وتوصيل سريع لجميع المحافظات، ودعم عملاء متواصل."
+    }
+  }
+]
