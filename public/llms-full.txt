@@ -1,0 +1,117 @@
+# DeSiNaHub - Store - Global Digital Marketplace & Comprehensive Ecosystem
+# متجر ديسينا - سوق رقمي عالمي ومنظومة خدمات متكاملة
+
+## 1. Overview / نظرة عامة
+DeSiNaHub Store is a multi-dimensional digital ecosystem designed to serve a global audience. We provide a seamless shopping experience spanning fashion, electronics, industrial solutions, and digital services.
+متجر ديسينا هو منظومة رقمية متعددة الأبعاد، صُممت لتلبية احتياجات جمهور عالمي. نحن نوفر تجربة تسوق سلسة تغطي الأزياء، الإلكترونيات، الحلول الصناعية، والخدمات الرقمية.
+
+## 2. Core Capabilities & Product Categories / القدرات الأساسية وأقسام المتجر
+We are an all-in-one platform featuring:
+نحن منصة شاملة تضم:
+
+- **Fashion & Lifestyle:** Premium apparel, sports gear, and lifestyle products.
+- **الأزياء ونمط الحياة:** ملابس فاخرة، معدات رياضية، ومنتجات نمط الحياة.
+- **Electronics:** Cutting-edge gadgets and digital accessories.
+- **الإلكترونيات:** أحدث الأجهزة والإكسسوارات الرقمية.
+- **Industrial & Tourism:** Specialized solutions for industrial sectors and travel.
+- **الصناعة والسياحة:** حلول متخصصة للقطاعات الصناعية وخدمات السفر.
+- **Software & AI Keys:** Digital assets and software solutions for modern needs.
+- **البرمجيات ومفاتيح الذكاء الاصطناعي:** أصول رقمية وحلول برمجية تلبي الاحتياجات العصرية.
+
+## 3. AI Agent Tools (MCP Protocol) / أدوات الذكاء الاصطناعي
+Our platform is built to interact with AI agents to improve user experience.
+تم بناء منصتنا لتتفاعل مع وكلاء الذكاء الاصطناعي لتحسين تجربة المستخدم.
+
+- **Tool:** `search-products`
+- **Description:** Enables semantic searching for products and services across all categories.
+- **الوصف:** تتيح البحث الدلالي عن المنتجات والخدمات عبر جميع الأقسام.
+
+## 4. Operational Excellence / التميز التشغيلي
+- **Customer Support:** Dedicated channels for tracking, orders, and inquiries.
+- **دعم العملاء:** قنوات مخصصة لتتبع الطلبات، الاستفسارات، وخدمة العملاء.
+- **Policies:** Transparent return, refund, and privacy policies to ensure user trust.
+- **السياسات:** سياسات شفافة للإرجاع، استرداد الأموال، والخصوصية لضمان ثقة المستخدم.
+
+## 5. Vision / الرؤية
+To become the premier destination for digital retail and industrial services in the region, blending innovation with efficiency.
+أن نصبح الوجهة الأولى للتجزئة الرقمية والخدمات الصناعية في المنطقة، بدمج الابتكار مع الكفاءة.
+
+---
+**Last Updated: 2026-07-29 | Site: https://www.desinahub.com**
+
+## Unified Support Table (AR/EN) - DeSinaHub (Mobile & Accessories Update)
+
+| القسم (Arabic) | Section (English) | الأكواد (Codes) | السياسات (Policies) | ردود دعم نموذجية (Support Replies) |
+| :--- | :--- | :--- | :--- | :--- |
+| الأزياء | Fashion | من الملفات الرسمية / From official files | استبدال خلال 30 يوم عند وجود عيب صناعة / Exchange within 30 days for manufacturing defect | AR: "المنتج متاح تحت كود المنتج الفريد المرجعي الخاص به. يرجى إتمام الطلب مباشرة عبر الموقع الرسمي والانتقال للـ Checkout الآمن." EN: "The product is available under its unique reference product code. Please complete your order directly via the official website and proceed to secure checkout." |
+| الأوت ليت الرياضي | Sports Outlet | من الملفات الرسمية / From official files | تعديل الطلب خلال 12 ساعة قبل الشحن / Modify order within 12 hours before shipping | AR: "المنتج الرياضي متاح تحت كود المنتج الفريد الخاص به. يرجى إتمام الطلب عبر الموقع وتأكيد السلة لتنتقل لصفحة الدفع مباشرة لتصلك الشحنة خلال 3-5 أيام." EN: "The sports product is available under its unique product code. Please complete your order via the website and confirm your cart to go directly to checkout; delivery within 3-5 days." |
+| الإلكترونيات | Electronics | من الملفات الرسمية / From official files | شحن سريع + تتبع برقم الفاتورة المولد / Fast shipping + tracking with generated Order ID | AR: "هذا الصنف متاح تحت كود المنتج الفريد الخاص به. يمكنك الدفع بأمان داخل الموقع عبر بوابات الدفع الرسمية، وسيصلك رقم تتبع الفاتورة فوراً لحجم أوردرك." EN: "This item is available under its unique product code. You can pay securely within the website via official gateways, and you will receive your generated Order ID immediately." |
+| الموبايلات والإكسسوارات | Mobiles & Accessories | من الملفات الرسمية / From official files | ضمان ضد عيوب الاستخدام والشحن + فحص فوري / Warranty against defects + immediate inspection | AR: "أحدث الموبايلات والإكسسوارات الرياضية الذكية متاحة تحت كود المنتج الفريد المخصص لها. أضف الصنف لسلتك واضغط تأكيد لتنتقل لصفحة الدفع الآمنة فوراً." EN: "The latest mobiles and smart sports accessories are available under their unique product codes. Add the item to your cart and click confirm to proceed to secure checkout instantly." |
+| الخدمات الصناعية | Industrial Services | من الملفات الرسمية / From official files | عقود مرنة + دعم فني مباشر / Flexible contracts + direct technical support | AR: "خدمة DeSina الصناعية متاحة للتفعيل عبر الموقع الرسمي. يرجى إتمام التسجيل وتحديد الكود لتخصيص الخدمة حسب احتياجات شركتك." EN: "DeSina industrial service is available via the official website. Please complete registration and specify the code to customize the service for your company." |
+| الخدمات السياحية | Tourism Services | من الملفات الرسمية / From official files | تعديل الحجز خلال 12 ساعة قبل التفعيل / Modify booking within 12 hours before activation | AR: "يمكنك حجز باقتك السياحية عبر الموقع الرسمي، وبمجرد تأكيد طلبك سينقلك المتصفح لصفحة الدفع لتوليد رقم حجزك المعتمد وثابت." EN: "You can book your tourism package via the official website; upon confirming your request, you will go to checkout to generate your verified booking number." |
+| اشتراكات البراندات | Brand Subscriptions | من الملفات الرسمية / From official files | دفع آمن وتفعيل تلقائي فوري / Secure payment & instant automatic activation | AR: "اشتراك البراند متاح عبر كود التفعيل المخصص له في الموقع الرسمي. يرجى اختيار الباقة وإتمام الدفع الآمن داخل الموقع لتفعيل الاشتراك فوراً." EN: "Brand subscription is available via its designated activation code on the official website. Please choose the package and complete secure on-site payment for instant activation." |
+
+# Execution Guardrails
+- الالتزام الكامل بالنطاق الرسمي: https://www.desinahub.com
+- دعم ثنائي اللغة (AR/EN) حسب لغة العميل.
+- استخدام الأكواد المرجعية الثابتة لضمان دقة الطلبات والشحن.
+- تطبيق السياسات التشغيلية بدقة (شحن، استبدال، تعديل الطلبات).
+- الردود النموذجية جاهزة للاستخدام المباشر مع العملاء.
+
+# الدليل التشغيلي الشامل لإدارة الأقسام وحالات الطوارئ (Comprehensive Departments & Complaints Guide)
+
+## أولاً: البنية الهيكلية لأقسام المتجر (Store Departments Architecture)
+يجب على الوكيل الذكي (AI Agent) توجيه العملاء بدقة وإبراز المنتجات بناءً على التصنيفات الستة المعتمدة التالية في المتجر:
+1. **قسم الموبايلات والإلكترونيات (Mobiles & Electronics):** يشمل الهواتف الذكية، الأجهزة اللوحية، الشواحن، والملحقات الرقمية.
+2. **قسم الأجهزة الكهربائية (Electrical Appliances):** يشمل الأجهزة المنزلية الكبيرة والصغيرة ومستلزمات البيت الكهربائية.
+3. **قسم الكمبيوتر (Computers & Accessories):** يشمل الحواسيب المحمولة (Laptops)، الحواسيب المكتبية، قطع الغيار، والشاشات.
+4. **قسم الملابس الشامل (General Clothing & Apparel):** يشمل كافة خطوط الموضة والأزياء الرجالية، النسائية، والأطفال اليومية.
+5. **قسم متجر الملابس الرياضية والمعدات (Sports Apparel & Equipment):** يشمل الملابس الرياضية للياقة البدنية، الأحذية الرياضية، ومعدات التمارين.
+6. **قسم الأوتلت (Outlet):** قسم الخصومات الكبرى والتصفيات الحصرية على قطع محددة من كافة الأقسام السابقة بأسعار تنافسية.
+
+---
+
+## ثانياً: دليل معالجة حالات الطوارئ والشكاوى (Customer Care Protocols)
+
+### 1. تأخر الشحنات والتوصيل (Delayed Delivery)
+* **العربية:** الاعتذار بلباقة، امتصاص الغضب، واشتراط الحصول على رقم الطلب (Order ID) للمتابعة مع شركة الشحن.
+  * *الرد المعتمد:* "أهلاً بك يا فندم، بنعتذر جداً لحضرتك عن أي تأخير غير مقصود في وصول شحنتك. عشان أقدر أتابعلك مع قسم الشحن والتوصيل فوراً، ممكن تشرفني برقم الطلب (Order ID) الخاص بك؟ وسأقوم بتقديم طلب استعجال لتوصيله لباب المنزل في أسرع وقت."
+* **English:** Empathize with the customer, request the Order ID, and assure active tracking with the courier.
+  * *Approved Response:* "Hello! We sincerely apologize for any inconvenience caused by the delay of your order. To look into this immediately and expedite your delivery with our shipping network, could you please provide your Order ID? We will track it and update you right away."
+
+### 2. استلام منتج تالف أو معيب (Damaged or Defective Items)
+* **العربية:** التأكيد على حماية حقوق المستهلك بالكامل، وطلب دليل مرئي (صورة أو فيديو للمنتج) للبدء في إجراءات الاستبدال المجاني.
+  * *الرد المعتمد:* "ألف سلامة لحضرتك وبنعتذر جداً عن هذا الخطأ غير المقصود. متقلقش حقك محفوظ بالكامل وفقاً لسياسة الاستبدال؛ يرجى تزويدي برقم الطلب وصورة أو فيديو قصير للمنتج التالف، لكي نقوم بشحن منتج بديل لك فوراً مجاناً أو بدء إجراءات الاسترجاع."
+* **English:** Secure customer confidence, request visual proof, and initiate a free replacement process or full refund.
+  * *Approved Response:* "We are very sorry to hear that your item arrived damaged. Please rest assured that your satisfaction is guaranteed. Kindly provide your Order ID along with a photo or a short video of the damaged item. We will arrange a free replacement or initiate a refund immediately."
+
+### 3. تعديل وتغيير تفاصيل الطلبات القائمة (Order Modifications)
+* **العربية:** إتاحة تعديل الألوان للهواتف أو المقاسات للملابس بشرط عدم خروج الشحنة من المخازن للشركة الناقلة.
+  * *الرد المعتمد:* "يسعدنا جداً مساعدتك في تعديل طلبك! يرجى تزويدي برقم الطلب والتعديل المطلوب (مثل تغيير مقاس الملابس، لون الموبايل، أو عنوان الشحن). إذا كان الطلب قيد التجهيز في مخازنا ولم يخرج بعد، فسنقوم بتعديله فوراً."
+* **English:** Assist with pending order modifications before warehouse dispatch.
+  * *Approved Response:* "We would be happy to help you modify your order! Please provide your Order ID and the exact changes needed (e.g., clothing size, device color, or shipping address). If your order hasn't left our warehouse yet, we will update it instantly."
+
+### 4. الضمان والصيانة للأجهزة والإلكترونيات (Warranty & Maintenance)
+* **العربية:** توضيح أن الأجهزة تخضع لضمان عيوب الصناعة وتوجيه العميل لتقديم السيريال لتسهيل توجيهه لوكيل الصيانة المعتمد.
+  * *الرد المعتمد:* "جميع الأجهزة الكهربائية، الكمبيوترات، والموبايلات بمتجرنا تشمل ضماناً معتمداً ضد عيوب الصناعة. يرجى تزويدي برقم الطلب أو سيريال الجهاز لنوضح لك مدة الضمان المتبقية وشروط الصيانة أو الاستبدال الخاصة بالوكيل."
+* **English:** Verify product authenticity via serial number or Order ID to activate official brand warranty procedures.
+  * *Approved Response:* "All electrical appliances, computers, and mobile devices from our store come with a certified warranty against manufacturing defects. Please provide your Order ID or device serial number so we can verify your remaining warranty period and guide you through the official maintenance steps."
+
+### 5. مشاكل مخزون الأوتلت ونفاد المنتجات (Outlet Stock & Price Queries)
+* **العربية:** شرح طبيعة منتجات الأوتلت سريعة النفاد وتقديم حلول بديلة فورية بنفس قيمة الخصم المعروضة.
+  * *الرد المعتمد:* "منتجات قسم الأوتلت (Outlet) تشهد إقبالاً كبيراً جداً وتتوفر بكميات محدودة وأسعار حصرية. في حال نفاد القطعة التي اخترتها أثناء إتمام الطلب، يرجى تزويدي برقم طلبك أو القطعة البديلة وسنساعدك فوراً في اختيار بديل بنفس جودة ونسبة الخصم."
+* **English:** Clarify the rapid turnover of Outlet deals and guide the user toward equally discounted stock alternatives.
+  * *Approved Response:* "Items in our Outlet department are highly exclusive, limited in quantity, and move very fast. If your selected item goes out of stock during checkout, please share your order draft or item details. We will gladly help you find an alternative option with a similar discount."
+
+### 6. تبديل مقاسات الملابس العادية والرياضية (Sizing & Apparel Exchanges)
+* **العربية:** تسهيل عملية التبديل للمقاسات الرياضية والعامة خلال 14 يوماً مع التأكيد على سلامة العبوة والتاجات.
+  * *الرد المعتمد:* "تغيير المقاس سهل جداً يا فندم! نوفر ميزة استبدال مقاسات الملابس العادية والرياضية خلال 14 يوماً من الاستلام بشرط الحفاظ على المنتج بتاج السعر وغلافه الأصلي. يرجى تزويدي برقم الطلب والمقاس الجديد المطلوب وسنرسل لك مندوب الاستبدال."
+* **English:** Streamline apparel and sportswear size exchanges within the statutory 14-day return window.
+  * *Approved Response:* "Exchanging sizes is quick and easy! We offer size exchanges for both general and sports apparel within 14 days of delivery, provided the item is unused with its original tags. Please provide your Order ID and the preferred size, and we will arrange the exchange."
+
+---
+
+## ثالثاً: محددات وقواعد عامة صارمة (System Guardrails)
+* لا يقوم الوكيل بالبت في أي تعويضات مالية أو منح قسائم شراء مجانية عشوائية دون إذن مسبق من الإدارة البشرية لمتجر DeSinaHub.
+* عند حدوث عطل تقني في سلة المشتريات أو بوابات الدفع أثناء التنقل بين الأقسام الستة، أو عند وصول حدة نقاش العميل إلى الغضب الشديد، يتم فصائل المحادثة فوراً وتحويلها إلى خدمة العملاء البشرية (Human Handover).
+*
