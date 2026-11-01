@@ -1,0 +1,685 @@
+/* ==========================================================================
+   DeSinaHub — merged design system
+   Base = desi-main (routing, data, logic) · Identity = desina-store
+   ========================================================================== */
+/* Layer order: preflight may not erase the brand typography, and Tailwind
+   utilities keep overriding it on the pages we leave untouched. */
+@layer theme, base, brand, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+
+/* 1. Design tokens + stylesheets imported from the desina-store brand kit */
+@import '../styles/tokens.css' layer(brand);
+@import '../styles/base.css' layer(brand);
+@import '../styles/chrome.css' layer(brand);
+@import '../styles/home.css' layer(brand);
+@import '../styles/catalog.css' layer(brand);
+@import '../styles/commerce.css' layer(brand);
+@import '../styles/pages.css' layer(brand);
+
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* 2. desina-store globals.css extras (kept verbatim, inside the brand layer) */
+@layer brand {
+  .section-heading--center {
+    justify-content: center;
+    text-align: center;
+  }
+  .section-heading--center .section-heading__copy {
+    align-items: center;
+  }
+  .section-heading--center .section-sub {
+    margin-inline: auto;
+  }
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: rgba(255, 255, 255, 0.55);
+    transition:
+      background 0.3s var(--ease-out),
+      color 0.3s var(--ease-out);
+  }
+  .text-link:hover {
+    background: var(--dark);
+    color: #fff;
+  }
+  .text-link svg {
+    width: 15px;
+    height: 15px;
+  }
+  .menu-socials .social-label {
+    display: none;
+  }
+  .install-hint {
+    text-decoration: none;
+  }
+}
+
+/* ==========================================================================
+   3. Tailwind theme — the desina-store brand palette mapped onto
+   desi-main's utility names, so every existing component inherits the
+   brand identity without touching its logic.
+   ========================================================================== */
+@theme {
+  /* brand core */
+  --color-cream: #f7f4eb; /* store --bg */
+  --color-cream-deep: #ede6d6; /* store --cream */
+  --color-cream-soft: #fffcf6; /* store --surface-warm */
+  --color-canary: #ff6a3d; /* store --orange (legacy name, now brand orange) */
+  --color-canary-deep: #ff3b30; /* store --accent */
+  --color-olive: #ff3b30; /* store --accent (legacy name, now brand red) */
+  --color-olive-dark: #e92f25; /* store --accent-deep */
+  --color-brand-red: #ff3b30;
+  --color-brand-orange: #ff6a3d;
+  --color-brand-gold: #b8a17b;
+  --color-ink: #17120d;
+  --color-surface: #ffffff;
+  --color-muted: #8b8176;
+  --color-line: rgba(33, 25, 16, 0.1);
+  --font-sans: var(--font-cairo), 'Cairo', ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: 0 24px 60px -40px rgba(46, 33, 16, 0.45);
+  --shadow-float: 0 40px 100px -50px rgba(46, 33, 16, 0.55);
+  --radius-card: 1.625rem;
+}
+
+:root {
+  --mob-h: 5.5rem;
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   4. Document base
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h, 74px) + env(safe-area-inset-top, 0px) + 24px);
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-cairo), 'Cairo', ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem; /* desi-main typography base */
+  line-height: 1.65;
+  color: var(--ink);
+  background-color: var(--bg);
+  background-image: var(--marble);
+  background-attachment: fixed;
+  padding-bottom: calc(var(--mob-h) + env(safe-area-inset-bottom, 0px));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior-y: none;
+  font-synthesis-weight: none;
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ==========================================================================
+   5. Shared layout primitives (desi-main structure + desina-store identity)
+   ========================================================================== */
+.page-shell {
+  width: 100%;
+  max-width: var(--container, 80rem);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .page-shell {
+    padding-inline: 2rem;
+  }
+}
+
+.surface-card {
+  background: var(--surface-warm, rgba(255, 252, 246, 0.86));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(6px);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--accent) 55%, var(--accent-deep) 100%);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  padding: 0.8rem 1.5rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  box-shadow: 0 14px 30px -18px rgba(255, 59, 48, 0.75);
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-deep);
+  box-shadow: 0 18px 36px -18px rgba(255, 59, 48, 0.8);
+}
+
+.btn-primary:active {
+  transform: translateY(1px) scale(0.995);
+}
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--dark);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  padding: 0.8rem 1.5rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.btn-dark:hover {
+  background: var(--dark-3);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  padding: 0.7rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  background: rgba(255, 255, 255, 0.7);
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.btn-ghost:hover {
+  background: #fff;
+  border-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.ds-divider {
+  height: 1px;
+  width: 100%;
+  background: var(--line);
+}
+
+/* ==========================================================================
+   6. iPhone PWA safe area (notch / status bar)
+   ========================================================================== */
+.ds-header {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  .ds-header {
+    padding-top: max(env(safe-area-inset-top, 0px), 0px);
+  }
+}
+
+/* ==========================================================================
+   7. Bottom navigation — structure/dimensions preserved from desi-main,
+   green + yellow accents replaced by the brand red/orange identity.
+   ========================================================================== */
+.ds-nav-active {
+  color: var(--ink);
+}
+
+.ds-nav-tile-active {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.ds-nav-quick {
+  background: linear-gradient(135deg, var(--orange) 0%, var(--accent) 60%, var(--accent-deep) 100%);
+  color: #fff;
+  box-shadow: 0 12px 26px -12px rgba(255, 59, 48, 0.8);
+}
+
+.ds-nav-quick:active {
+  transform: scale(0.95);
+}
+
+.ds-nav-badge {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ==========================================================================
+   8. Typography bridge — desina-store components rendered at
+   desi-main's exact type scale (keeps the layout clean + responsive).
+   ========================================================================== */
+.hero__title {
+  font-size: clamp(2.35rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.hero__lead {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.hero-slide__title {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.hero-slide__eyebrow {
+  font-size: 0.5625rem;
+}
+
+.hero-slide__price {
+  font-size: 0.9375rem;
+}
+
+.hero-slide__discount {
+  font-size: 0.625rem;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.section-sub {
+  font-size: 0.875rem;
+}
+
+.section-link {
+  font-size: 0.75rem;
+}
+
+.eyebrow {
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+}
+
+.product-title {
+  font-size: 0.875rem;
+  min-height: 2.6em;
+}
+
+@media (min-width: 768px) {
+  .product-title {
+    font-size: 0.9375rem;
+  }
+}
+
+.product-badge,
+.product-category-chip {
+  font-size: 0.625rem;
+}
+
+.product-kicker,
+.product-code,
+.product-brand {
+  font-size: 0.5625rem;
+}
+
+.product-grid .price,
+.price-block .price {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .product-grid .price,
+  .price-block .price {
+    font-size: 1.125rem;
+  }
+}
+
+.product-grid .old-price,
+.price-block .old-price {
+  font-size: 0.6875rem;
+}
+
+.category-card__copy h3 {
+  font-size: 0.8125rem;
+}
+
+.category-card__tag {
+  font-size: 0.5625rem;
+}
+
+.editorial-card h3 {
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+}
+
+.editorial-card__kicker,
+.editorial-card__text {
+  font-size: 0.75rem;
+}
+
+.editorial-card__link {
+  font-size: 0.6875rem;
+}
+
+.promise-card h3 {
+  font-size: 0.875rem;
+}
+
+.promise-card p {
+  font-size: 0.6875rem;
+}
+
+.story__copy h2,
+.newsletter__copy h2,
+.deals-head h2 {
+  font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+}
+
+.story__copy p,
+.newsletter__copy p {
+  font-size: 0.875rem;
+}
+
+.testimonial-card__text {
+  font-size: 0.8125rem;
+}
+
+.testimonial-card__product {
+  font-size: 0.625rem;
+}
+
+.product-info h1 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.16;
+}
+
+.product-price-row .price {
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  font-weight: 800;
+}
+
+.product-panel > summary {
+  font-size: 0.875rem;
+}
+
+.spec-list__row dt,
+.spec-list__row dd {
+  font-size: 0.75rem;
+}
+
+.category-hero__copy h1 {
+  font-size: clamp(1.875rem, 3.4vw, 3rem);
+  line-height: 1.12;
+}
+
+.cart-panel__title {
+  font-size: 1rem;
+}
+
+.cart-line__name {
+  font-size: 0.8125rem;
+}
+
+.cart-panel__foot .summary-row {
+  font-size: 0.875rem;
+}
+
+.summary-row--total strong {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 640px) {
+  .hero__title {
+    font-size: clamp(1.875rem, 8vw, 2.35rem);
+  }
+  .product-title {
+    font-size: 0.8125rem;
+    min-height: 2.8em;
+  }
+  .product-grid .price,
+  .price-block .price {
+    font-size: 0.9375rem;
+  }
+}
+
+/* ==========================================================================
+   9. Legacy brand guard — the Industrial & Tourism service pages keep
+   their original desi-main palette untouched.
+   ========================================================================== */
+.ds-legacy {
+  --color-cream: #f5f5dc;
+  --color-cream-deep: #ede6d6;
+  --color-cream-soft: #fdfbf7;
+  --color-canary: #d9f45b;
+  --color-canary-deep: #c8ea43;
+  --color-olive: #566b3f;
+  --color-olive-dark: #3d5030;
+  --color-ink: #111111;
+  --color-muted: #6b7280;
+  --color-line: rgba(17, 17, 17, 0.08);
+  --shadow-card: 0 18px 45px rgba(31, 31, 31, 0.07);
+  --shadow-float: 0 24px 60px rgba(31, 31, 31, 0.14);
+}
+
+.ds-legacy.surface-card,
+.ds-legacy .surface-card {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: var(--color-line);
+  box-shadow: var(--shadow-card);
+}
+
+.ds-legacy .btn-primary,
+.ds-legacy.btn-primary {
+  background: var(--color-canary);
+  color: var(--color-ink);
+  border-color: rgba(17, 17, 17, 0.12);
+  box-shadow: none;
+}
+
+.ds-legacy .btn-primary:hover,
+.ds-legacy.btn-primary:hover {
+  background: var(--color-canary-deep);
+  box-shadow: 0 8px 24px rgba(86, 107, 63, 0.18);
+}
+
+.ds-legacy .btn-dark,
+.ds-legacy.btn-dark {
+  background: var(--color-ink);
+}
+
+.ds-legacy .btn-dark:hover,
+.ds-legacy.btn-dark:hover {
+  background: var(--color-olive-dark);
+}
+
+.ds-legacy .btn-ghost,
+.ds-legacy.btn-ghost {
+  border-color: rgba(17, 17, 17, 0.16);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.ds-legacy .btn-ghost:hover,
+.ds-legacy.btn-ghost:hover {
+  background: #fff;
+  border-color: var(--color-olive);
+  color: var(--color-ink);
+}
+
+.ds-legacy .chip,
+.ds-legacy.chip {
+  background: rgba(17, 17, 17, 0.05);
+  color: #4b5563;
+}
+
+/* ==========================================================================
+   10. Swiper compatibility + shared motion
+   ========================================================================== */
+.swiper-slide {
+  height: auto;
+}
+
+[dir='rtl'] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+details > summary {
+  list-style: none;
+}
+
+@keyframes ds-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ds-rise {
+  animation: ds-rise 220ms ease-out both;
+}
+
+@keyframes ds-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ds-fade-in {
+  animation: ds-fade-in 180ms ease-out both;
+}
+
+@keyframes ds-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ds-marquee {
+  animation: ds-marquee 34s linear infinite;
+}
+
+[dir='rtl'] .ds-marquee {
+  animation-direction: reverse;
+}
+
+.ds-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
