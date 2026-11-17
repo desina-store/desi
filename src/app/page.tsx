@@ -163,7 +163,7 @@ export default async function HomePage() {
         title={pick(lang, HOME_COPY.trendingTitle.en, HOME_COPY.trendingTitle.ar)}
         sub={pick(lang, HOME_COPY.trendingSub.en, HOME_COPY.trendingSub.ar)}
         items={trending}
-        action={{ href: '/search', label: tr('common.viewAll') }}
+        action={{ href: "/search", label: tr('common.viewAll') }}
       />
 
       <section className="brand-section">
