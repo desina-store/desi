@@ -106,8 +106,8 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     googleBot: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
       'max-image-preview': 'large',
       'max-snippet': -1,
       'max-video-preview': -1,
@@ -124,12 +124,6 @@ export const viewport: Viewport = {
   colorScheme: 'light',
 };
 
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  
-};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const cookieStore = await cookies();
