@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'DeSinaHub — ديسينا ستور | Mobiles, Computers, Home Appliances, Outlet, Sports & Fashion',
+      'DeSinaHub — ديسينا ستور | Mobiles, Computers, Home Appliances, Outlet, Sports, Fashion, & Lifestyle',
     template: '%s | DeSinaHub',
   },
   description:
@@ -122,6 +122,13 @@ export const viewport: Viewport = {
   viewportFit: 'auto',
   themeColor: '#F5F5DC',
   colorScheme: 'light',
+};
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
